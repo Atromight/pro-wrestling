@@ -8,11 +8,16 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "fastapi (>=0.115.12,<0.116.0)",
+    "pytest (>=8.3.5,<9.0.0)"
 ]
 
 [tool.poetry]
 packages = [{include = "wwe_api", from = "src"}]
 
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = {extras = ["standard"], version = "^0.34.2"}
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
