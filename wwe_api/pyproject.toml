@@ -1,24 +1,22 @@
-[project]
+[tool.poetry]
 name = "wwe-api"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "Atromight",email = "asimitsidellis@gmail.com"}
-]
+description = "A project for managing pro wrestling data API"
+authors = ["Atromight <asimitsidellis@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-    "fastapi (>=0.115.12,<0.116.0)",
-    "pytest (>=8.3.5,<9.0.0)"
-]
 
-[tool.poetry]
-packages = [{include = "wwe_api", from = "src"}]
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = ">=0.115.12,<0.116.0"
+pytest = ">=8.3.5,<9.0.0"
+pydantic = ">=2.0"
+sqlalchemy = "^2.0.40"
+aiosqlite = "^0.21.0"
+pandas = "^2.2.3"
 
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.group.dev.dependencies]
 uvicorn = {extras = ["standard"], version = "^0.34.2"}
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"

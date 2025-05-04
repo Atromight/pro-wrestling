@@ -1,0 +1,40 @@
+id,name,birth_date,world_titles,weight_class,active,debut
+1,Hulk Hogan,1953-08-11,6,heavyweight,False,1977
+2,Ric Flair,1949-02-25,16,heavyweight,False,1972
+3,Randy Savage,1952-11-15,2,heavyweight,False,1985
+4,Sting,1959-03-20,2,heavyweight,True,1985
+5,Goldberg,1966-12-27,2,superheavyweight,True,1997
+6,Steve Austin,1964-12-18,6,heavyweight,False,1989
+7,The Rock,1972-05-02,10,heavyweight,True,1996
+8,Triple H,1969-07-27,14,heavyweight,True,1992
+9,Undertaker,1965-03-24,7,superheavyweight,False,1990
+10,John Cena,1977-04-23,16,heavyweight,True,2002
+11,Randy Orton,1980-04-01,14,heavyweight,True,2002
+12,Batista,1969-01-18,6,superheavyweight,False,1999
+13,Eddie Guerrero,1967-10-09,1,heavyweight,False,1987
+14,CM Punk,1978-10-26,2,heavyweight,False,1999
+15,Roman Reigns,1985-05-25,4,heavyweight,True,2010
+16,Cody Rhodes,1985-06-30,2,heavyweight,True,2006
+17,Rey Mysterio,1974-12-11,1,lightweight,True,1989
+18,Brock Lesnar,1977-07-12,5,superheavyweight,True,2000
+19,Edge,1973-10-30,11,heavyweight,True,1996
+20,Kurt Angle,1968-12-09,6,heavyweight,False,1998
+21,Shawn Michaels,1965-07-22,4,heavyweight,False,1984
+22,Bret Hart,1957-07-02,5,heavyweight,False,1978
+23,Seth Rollins,1986-05-28,2,heavyweight,True,2004
+24,Drew McIntyre,1985-06-06,2,heavyweight,True,2003
+25,Daniel Bryan,1981-05-22,4,heavyweight,True,1999
+26,Gunther,1987-08-08,1,heavyweight,True,2014
+27,Finn Balor,1981-10-25,0,heavyweight,True,2000
+28,The Miz,1980-10-08,2,heavyweight,True,2004
+29,Big Show,1972-02-08,2,superheavyweight,False,1995
+30,Kane,1967-04-26,3,superheavyweight,False,1992
+31,Chris Jericho,1970-11-09,6,heavyweight,True,1990
+32,Jeff Hardy,1977-08-31,0,heavyweight,True,1994
+33,Dean Ambrose,1985-12-07,1,heavyweight,True,2004
+34,Dolph Ziggler,1980-07-27,2,heavyweight,True,2004
+35,Booker T,1965-03-01,4,heavyweight,False,1989
+36,Sheamus,1978-01-28,4,heavyweight,True,2002
+37,AJ Styles,1977-06-02,2,heavyweight,True,1996
+38,Kevin Owens,1984-03-06,2,heavyweight,True,2000
+39,Bray Wyatt,1987-05-23,1,heavyweight,False,2009
