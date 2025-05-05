@@ -1,16 +1,14 @@
-from datetime import datetime
-from typing import List, Optional
-
-from pydantic import BaseModel
+from sqlalchemy import Boolean, Column, DateTime, Enum, Integer, String
 
 from wwe_api.const import WeightClass
+from wwe_api.db import Base
 
-class Wrestler(BaseModel):
-    name: str
-    birth_date: datetime
-    world_titles: int
-    nickname: Optional[str]
-    weight_class: WeightClass
-
-class WrestlersResponse(BaseModel):
-    wrestlers: List[Wrestler]
+class Wrestler(Base):
+    __tablename__ = "tWrestler"
+    id = Column(Integer, primary_key=True)
+    name = Column(String, nullable=False)
+    birth_date = Column(DateTime)
+    world_titles = Column(Integer)
+    weight_class = Column(Enum(WeightClass), nullable=False)
+    active = Column(Boolean)
+    debut = Column(Integer)
