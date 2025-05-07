@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
 from wwe_api.db import Base, engine
-from wwe_api.routers.wrestlers import wrestlers_router
+from wwe_api.routers import  nicknames_router, wrestlers_router
 from wwe_api.loader import load_all_csv_data
 
 
@@ -26,4 +26,5 @@ app = FastAPI(
 async def welcome():
     return{"message": "THEN, NOW, FOREVER, TOGETHER!"}
 
+app.include_router(nicknames_router)
 app.include_router(wrestlers_router)

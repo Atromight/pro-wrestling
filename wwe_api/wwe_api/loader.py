@@ -4,8 +4,19 @@ from sqlalchemy.orm import Session
 
 from wwe_api.const import CSV_PATHS
 from wwe_api.db import SessionLocal
-from wwe_api.models import Wrestler
+from wwe_api.models import Nickname, Wrestler
 
+
+def load_nickname_data(db: Session):
+    path = CSV_PATHS["nickname"]
+    df = pd.read_csv(path)
+    for _, row in df.iterrows():
+        nickname = Nickname(
+            id=row["id"],
+            name=row["name"],
+            wrestler_id=row["wrestler_id"]
+        )
+        db.add(nickname)
 
 def load_wrestler_data(db: Session):
     path = CSV_PATHS["wrestler"]
@@ -29,6 +40,8 @@ def load_all_csv_data():
     try:
         if db.query(Wrestler).count() == 0:
             load_wrestler_data(db) # Only load the CSV if the table is empty.
+        if db.query(Nickname).count() == 0:
+            load_nickname_data(db)
 
         db.commit()
     finally:
