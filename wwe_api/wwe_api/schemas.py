@@ -30,5 +30,9 @@ class WrestlerSchema(BaseModel):
         from_attributes = True
 
 
+class WrestlerResponse(BaseModel):
+    wrestler: WrestlerSchema
+
+
 class WrestlersResponse(BaseModel):
     wrestlers: List[WrestlerSchema]
